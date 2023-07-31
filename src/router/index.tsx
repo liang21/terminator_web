@@ -8,12 +8,12 @@ const withLoading = (router: JSX.Element) => (
   <React.Suspense fallback={<div>loading......</div>}>{router}</React.Suspense>
 );
 
-const routers = [
+const routes = [
   // 嵌套路由
-  {
-    path: "/",
-    element: <Navigate to="/home" />,
-  },
+  // {
+  //   path: "/",
+  //   element: <Navigate to="/home" />,
+  // },
   //   {
   //     path: "/",
   //     // 默认展示的主页
@@ -40,4 +40,4 @@ const routers = [
   },
 ];
 
-export default routers;
+export default routes;

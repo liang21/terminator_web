@@ -1,8 +1,7 @@
 import { useRoutes } from "react-router-dom";
-import routers from "./router";
-
+import routes from "./router";
 function App() {
-  const outlet = useRoutes(routers);
+  const outlet = useRoutes(routes);
   return <div>{outlet}</div>;
 }
 
