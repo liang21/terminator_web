@@ -1,8 +1,8 @@
 import { Navigate } from "react-router-dom";
 import React from "react";
 import Home from "@/pages/home";
-// import User from "@/pages/system/user";
-/
+import User from "@/pages/system/user";
+
 // const Home = lazy(() => import("@/pages/home"));
 // const User = lazy(() => import("@/pages/system/user"));
 
