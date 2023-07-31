@@ -1,7 +1,9 @@
 import { Navigate } from "react-router-dom";
-import React, { lazy } from "react";
-const Home = lazy(() => import("@/pages/home"));
-const User = lazy(() => import("@/pages/system/user"));
+import React from "react";
+import Home from "@/pages/home";
+// import User from "@/pages/system/user";
+// const Home = lazy(() => import("@/pages/home"));
+// const User = lazy(() => import("@/pages/system/user"));
 
 // 抽取函数
 const withLoading = (router: JSX.Element) => (
@@ -10,10 +12,10 @@ const withLoading = (router: JSX.Element) => (
 
 const routes = [
   // 嵌套路由
-  // {
-  //   path: "/",
-  //   element: <Navigate to="/home" />,
-  // },
+  {
+    path: "/",
+    element: <Navigate to="/home" />,
+  },
   //   {
   //     path: "/",
   //     // 默认展示的主页
