@@ -15,9 +15,31 @@ const items: MenuItem[] = [
     icon: <HomeOutlined />,
   },
   {
-    label: "项目设置",
-    key: "/project",
+    label: "测试跟踪",
+    key: "/track",
     icon: <DesktopOutlined />,
+    children: [
+      {
+        label: "首页",
+        key: "/track/home",
+      },
+      {
+        label: "测试用例",
+        key: "/page3/page302",
+      },
+      {
+        label: "用例评审",
+        key: "/track/reviews",
+      },
+      {
+        label: "测试计划",
+        key: "/track/plans",
+      },
+      {
+        label: "测试报告",
+        key: "/track/reports",
+      },
+    ],
   },
   {
     label: "ui测试",

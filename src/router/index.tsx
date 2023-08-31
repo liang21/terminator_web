@@ -7,6 +7,7 @@ import User from "@/pages/system/user";
 import Project from "@/pages/system/project";
 import Product from "@/pages/system/product";
 import Home from "@/pages/home";
+import NotFound from "@/pages/404/404";
 
 export interface IRouter {
   title?: string;
@@ -40,13 +41,49 @@ const routes: IRouter[] = [
         element: withLoading(<Home />),
       },
       {
-        path: "/user",
-        title: "用户管理",
-        key: "user",
+        path: "/project",
+        title: "测试跟踪",
+        key: "project",
         icon: <SettingOutlined />,
-        element: withLoading(<User />),
+        element: withLoading(<Project />),
+      },
+      {
+        path: "/api",
+        title: "接口测试",
+        key: "project",
+        icon: <SettingOutlined />,
+        element: withLoading(<Project />),
+      },
+      {
+        path: "/ui",
+        title: "ui测试",
+        key: "project",
+        icon: <SettingOutlined />,
+        element: withLoading(<Project />),
+      },
+      {
+        path: "/performance",
+        title: "性能测试",
+        key: "performance",
+        icon: <SettingOutlined />,
+        element: withLoading(<Project />),
+      },
+      {
+        path: "/settings",
+        title: "系统设置",
+        key: "settings",
+        icon: <SettingOutlined />,
+        element: withLoading(<Project />),
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Navigate to="/404" />,
+  },
+  {
+    path: "/404",
+    element: withLoading(<NotFound />),
   },
 ];
 
