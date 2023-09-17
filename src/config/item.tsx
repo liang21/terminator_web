@@ -82,8 +82,22 @@ const items: MenuItem[] = [
   },
   {
     label: "系统设置",
-    key: "/page6",
+    key: "/setting",
     icon: <FileOutlined />,
+    children: [
+      {
+        label: "用户管理",
+        key: "/setting/user",
+      },
+      {
+        label: "产品管理",
+        key: "/setting/product",
+      },
+      {
+        label: "项目管理",
+        key: "/setting/project",
+      },
+    ],
   },
 ];
 
